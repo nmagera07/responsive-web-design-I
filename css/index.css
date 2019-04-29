@@ -108,6 +108,7 @@ button {
 	width: 125px;
 	height: 40px;
     border: 1px gray solid;
+    margin-left: 100px;
 }
 
 .top-content {
@@ -169,7 +170,7 @@ footer p {
 	margin-bottom: 50px;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .navigation {
         display: flex;
         flex-direction: column;
@@ -249,9 +250,13 @@ footer p {
     .logo2 {
         display: none;
     }
+
+    button {
+        margin-right: 100px;
+    }
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .logo2 {
         display: none;
     }
@@ -308,4 +313,7 @@ footer p {
         width: 350px;
     }
     
+    button {
+        margin-right: 100px;
+    }
 }
