@@ -84,24 +84,10 @@ h1, h2, h3, h4, h5 {
 	color: gray;
 }
 
-
-
-
-
 button {
 	width: 125px;
 	height: 40px;
 	border: 1px gray solid;
-	position: relative;
-	right: 80px;
-	top: 2px;
-}
-
-.logo2 {
-	position: relative;
-	left: 300px;
-	top: 15px;
-	display: inline-block;
 }
 
 .top-content {
@@ -115,7 +101,6 @@ button {
 	height: 100px;
 	width: 600px;
 	margin: 20px;
-	
 }
 
 .middle-img {
@@ -162,28 +147,56 @@ footer p {
 .second-line {
 	margin-top: 50px;
 	margin-bottom: 50px;
-	
 }
 
 @media (max-width: 500px) {
     .navigation {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
     }
+
+    .navigation a {
+        height: 50px;
+        width: 90%;
+        margin: auto;
+        border-bottom: 1px solid black;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .content-top {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content-top .inner-content {
+        height: 250px;
+        padding-top: 50px;
+        text-align: center;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+   
 
    .logo {
        order: -1;
-       width: 200px;
-       margin-left: 100px;
+       height: 40px;
+       width: 150px;
+       margin: auto;
+       margin-bottom: 15px;
    }
 
-   .navigation a {
-       justify-content: center;
-       margin-left: 175px;
-       border-top: 1px solid black;
-       margin-top: 50px;
-       
+   .content1 {
+       display: flex;
+       flex-direction: row;
+   }
+
+   .content1 .inner-content {
+     height: 500px;
+     width: 500px;
    }
 
     .top-content {
@@ -195,7 +208,7 @@ footer p {
 
     .top-content .content1 {
         height: 100px;
-        width: 350px;
+        width: 90%;
     }
 
     .bottom-content {
@@ -217,11 +230,46 @@ footer p {
         justify-content: center;
     }
 
-    .content1 .inner-content {
-        width: 500px;
-    }
 
     .logo2 {
         display: none;
     }
+}
+
+@media (max-width: 800px) {
+    .logo2 {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+     .navigation a {
+        
+    }
+
+    .logo {
+        order: -1;
+    }
+
+     .content-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-top .inner-content {
+        height: 300px;
+        padding-top: 50px;
+        text-align: center;
+        margin: auto;
+    }
+
+     h1 {
+        font-size: 50px;
+    }
+
+    
 }
